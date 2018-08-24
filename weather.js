@@ -45,6 +45,10 @@ function showPopUp() {
             shownWeatherInfo = true;
         } else {
             $(".weather-overlay").removeClass("active");
+            if (shownSetting) {
+                $(".switch").removeClass("show");
+                shownSetting = false;
+            }
             shownWeatherInfo = false;
         }
     }); 

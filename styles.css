@@ -1,0 +1,135 @@
+/* Background */
+body {
+  margin: 0px;
+}
+  #background {
+    background-image: url("/background/saransh-sinha-773081-unsplash_min.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: static;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: -10
+  }
+    #background-overlay {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -5;
+    }
+  .top_row {
+    position: absolute;
+    top: 0;
+    height: 10%;
+    width: 100%;
+  }
+    /* Todo List */
+    #todo{
+      display: inline-block;
+      color: #ffffff;
+      position: absolute;
+      font-family: 'Ubuntu', sans-serif;
+      top: 5px;
+      right: 10px;
+      width: 15em;
+    }
+      h2 {
+        text-align: center;
+        font-family: 'Do Hyeon', sans-serif;
+      }
+      #myInput {
+        background: transparent;
+        border: 0px solid #ffffff;
+        color: #ffffff;
+        border-bottom-width: 2px;
+        width: 11.8em;
+        outline: none;
+        font-size: 15px;
+      }
+      #list {
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+      }
+        #list li {
+          padding: 2px 2px 2px 15px;
+          cursor: pointer;
+          position: relative;
+          list-style: none;
+          /* make the list items unselectable */
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+          #list li::before {
+            content: "\26AC";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            bottom: 1pm;
+            height: 12px;
+            width: 7px;
+          }
+          #list li:hover {
+            text-decoration: line-through;
+          }
+          #list li.checked {
+            text-decoration: line-through;
+            color: #0fb10a;
+          }
+          #list li.checked::before {
+            /* check mark */
+            content: "\2713"; 
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            bottom: 1pm;
+            height: 12px;
+            width: 7px;
+          }
+        .close {
+          position: absolute;
+          right: 0;
+          top: 0;
+          padding: 0px 3px 0px 3px;
+        }
+
+        .close:hover {
+          border-width: 1px;
+          border-style: solid;
+          border-color: white;
+        }
+
+  /* Clock And Date */
+  .center_main {
+    position: fixed;
+    top: 50%;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+  }
+    #clock {
+      color: #ffffff;
+      display: inline-block;
+      font-size: 13em;
+      font-family: 'Do Hyeon', sans-serif;
+      letter-spacing: 2px;
+    }
+    #date {
+      color: #ffffff;
+      display: inline-table;
+      top: 0;
+      font-size: 3em;
+      font-family: 'Do Hyeon', sans-serif;
+    }
+  .photoCredit {
+    position: absolute;
+    display: block;
+    right: 5px;
+    bottom: 5px;
+  }

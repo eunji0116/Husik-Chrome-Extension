@@ -1,0 +1,166 @@
+/* Weather */
+#weather {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 11.5em;
+    height: 7em;
+}
+    .weather-app {
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 9.5em;
+        height: 5.5em;
+        text-align: center;
+        /* make the list items unselectable */
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+        .weather-icon {
+            position: absolute;
+            display: inline-block;
+            width: 40%;
+            height: 100%;
+            filter: hue-rotate(180deg); 
+            left: 0;
+        }
+        .temp-metric {
+            position: relative;
+            display: inline;
+            left: 25px;
+            top: 10px;
+            font-size: 20px;
+        }
+        .degree {
+            position: relative;
+            left: 20px;
+            top: 5px;
+            font-size: 26px;
+        }
+        .location {
+            position: relative;
+            display: block;
+            font-size: 15px;
+            right: 5px;
+        }
+        
+    .weather-overlay {
+        color: #ffffff;
+        background-color: black;
+        visibility: hidden;
+        display: block;
+        border-radius: 15px;
+        opacity: 0.8;
+        /*Hides pop-up when there is no "active" class*/
+        position: relative;
+        left: 11em;
+        width: 20em;
+        height: 15em;
+    }
+        .weather-overlay.active {
+            visibility: visible;
+        }
+        #city {
+            color: #ffffff;
+            position: absolute;
+            background: transparent;
+            border: 0px;
+            outline: none;
+            left: 15px;
+            top: 5px;
+            width: auto;
+            font-size: 20px;
+        }
+        #setting {
+            cursor: pointer;
+            position: absolute;
+            display: inline-block;
+            top: 3px;
+            right: 8px;
+        }
+        .switch {
+            visibility: hidden;
+            position: absolute;
+            display: inline-block;
+            top: 30px;
+            right: -15px;
+            width: 35px;
+            height: 20px;
+        }
+            .switch.show {
+                visibility: visible;
+            }
+            .switch input {display:none;}
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+            }
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 14px;
+                width: 15px;
+                left: 3px;
+                bottom: 3px;
+                background-color: white; 
+            }
+            #units:checked + .slider {
+                background-color: #2196F3;
+            }
+            #units:checked + .slider:before {
+                -webkit-transform: translateX(14px);
+                -ms-transform: translateX(14px);
+                transform: translateX(14px);
+            }
+            /* Rounded sliders */
+            .slider.round {
+                border-radius: 34px;
+            }
+            .slider.round:before {
+                border-radius: 50%;
+            }
+            
+        #weather-description {
+            color: #c8e6fa;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            border: 1px;
+            font-size: 20px;
+        }
+        #weather-enlarged {
+            background-color:#520c8170;
+            position: absolute;
+            top: 55px;
+            left: 15px;
+            width: 17em;
+            height: 9.5em;
+        }   
+            .large-weather-icon {
+                position: relative;
+                display: inline-block;
+                top: 8px;
+            }
+            .large-temp-metric {
+                position: relative;
+                display: inline-block;
+                bottom: 20px;
+                right: 10px;
+                font-size: 4em;
+            }
+            .large-degree {
+                position: absolute;
+                font-size: 4em;
+                right: 3px;
+                bottom: 45px;
+            }

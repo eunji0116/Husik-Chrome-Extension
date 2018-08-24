@@ -8,12 +8,12 @@ This is a New Tab (Chrome Extension) inspired by **Momentum**
 
 It's pretty simple (though it wasn't simple to create one) and easy to use.
 It has the following features:
+  * Default weather location is @Seattle
   * Click on the weather to see an enlarged version of weather info. 
-  * Location for weather can be easily updated by simply deleting the location text and rewriting the new one,
-  then hit <enter>
-  * Temperature unit can be changed by clicking "..." on the detailed weather screen.
-  * Todo-list can be created by writing your goals, then hit <enter>
-  * After goals are completed, simply click> accompolished goals for "check" or delete by clicking "x"
+  * Location for weather can be easily updated by simply deleting the location text and rewriting the new location (It can be city, country or even zip code). Then hit `enter`.
+  * Temperature unit can be changed by clicking `...` on the detailed weather screen.
+  * Todo-list can be created by writing your goals, then hit `enter`
+  * After goals are completed, simply click accompolished goals for "check" or delete by clicking `x`
   * Time format can be changed by simply clicking time
   * Day shows when hovering over the date
   

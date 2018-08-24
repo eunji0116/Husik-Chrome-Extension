@@ -139,11 +139,11 @@
             font-size: 20px;
         }
         #weather-enlarged {
-            background-color:#520c8170;
+            background-color:#936aa5d5;
             position: absolute;
             top: 55px;
             left: 15px;
-            width: 17em;
+            width: 17.5em;
             height: 9.5em;
         }   
             .large-weather-icon {

@@ -16,7 +16,7 @@
   "chrome_url_overrides": {"newtab": "newTab.html"},
   "content_scripts": [
     { 
-      "matches": ["http://*"],
+      "matches": ["http://*/*"],
       "js": ["jquery.min.js"]
     }
   ]

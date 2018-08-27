@@ -16,11 +16,7 @@
   "chrome_url_overrides": {"newtab": "newTab.html"},
   "content_scripts": [
     { 
-<<<<<<< HEAD
       "matches": ["http://*/*"],
-=======
-      "matches": ["http://*"],
->>>>>>> 93428a82c21884095f9b025d1b7a85a0d199ce10
       "js": ["jquery.min.js"]
     }
   ]

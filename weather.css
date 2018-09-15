@@ -60,7 +60,7 @@
         position: relative;
         left: 11em;
         width: 20em;
-        height: 15em;
+        height: 13em;
     }
         .weather-overlay.active {
             visibility: visible;
@@ -81,7 +81,7 @@
             position: absolute;
             display: inline-block;
             top: 3px;
-            right: 8px;
+            right: 15px;
         }
         .switch {
             visibility: hidden;
@@ -139,11 +139,10 @@
             font-size: 20px;
         }
         #weather-enlarged {
-            background-color:#936aa5d5;
             position: absolute;
-            top: 55px;
+            top: 53px;
             left: 15px;
-            width: 17.5em;
+            width: 17em;
             height: 9.5em;
         }   
             .large-weather-icon {
@@ -164,3 +163,7 @@
                 right: 3px;
                 bottom: 45px;
             }
+img {
+    -webkit-filter: saturate(20%); /* Safari 6.0 - 9.0 */
+    filter: saturate(20%);
+}

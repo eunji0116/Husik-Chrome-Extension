@@ -30,16 +30,16 @@ function showClock() {
     } else {
         clock_el.innerHTML = time_12;
     }
-
     clock_el.addEventListener("click", function() {
         if (JSON.parse(localStorage.getItem(timeFormat24))) {
             clock_el.innerHTML = time_12;
-            localStorage.setItem(timeFormat24, false);
+            localStorage.setItem(timeFormat24, false);s
         } else {
             clock_el.innerHTML = time_24;
             localStorage.setItem(timeFormat24, true);
         }
     });
+    setInterval(showClock, 1000);
 }
 
 var date_el = document.getElementById("date");

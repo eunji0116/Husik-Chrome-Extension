@@ -15,7 +15,6 @@ function getWeatherAPI() {
 
     url = api + city + apiKey + units + unitFormat;
 }
-
 function load() {    
     getWeatherAPI()
     $.getJSON(url, function(data) {
@@ -23,6 +22,7 @@ function load() {
         var iconURL = "http://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png";
         $(".weather-icon").html("<img src='" + iconURL  + "'>");
         $(".large-weather-icon").html("<img style='width: 8em; height: 8em'; src='" + iconURL  + "'>");
+        
         var temp = weatherData.main.temp;
         temp = temp.toFixed(1);
         $(".temp-metric").html(temp);

@@ -1,6 +1,7 @@
 var date, hr, min, sec, timeFormat24;
 
 // Display time and dates
+
 function showClock() {
     date = new Date();
     hr_24 = date.getHours();
@@ -39,8 +40,11 @@ function showClock() {
             localStorage.setItem(timeFormat24, true);
         }
     });
-    setInterval(showClock, 1000);
 }
+showClock();
+setInterval(function(){
+    showClock();
+ },1000);
 
 var date_el = document.getElementById("date");
 
@@ -129,7 +133,6 @@ function getData() {
     }
 }
 
-showClock();
 showDate();
 checkedTodo();
 getData();

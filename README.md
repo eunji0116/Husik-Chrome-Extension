@@ -3,7 +3,7 @@
 It's my first project using skills of `jQuery`, `javascript`, `css`, and `html`. \
 This is a New Tab (Chrome Extension) inspired by **Momentum** 
 
-![alt text](https://github.com/eunji0116/Husik-Chrome-Extension-/blob/master/Snapshots/Screen%20Shot%202018-08-24%20at%202.42.33%20PM.png "Screenshot") 
+![alt text](https://github.com/eunji0116/Husik-Chrome-Extension-/blob/master/Snapshots/Screen Shot.png "Screenshot") 
 
 
 It's pretty simple (though it wasn't simple to create one) and easy to use.

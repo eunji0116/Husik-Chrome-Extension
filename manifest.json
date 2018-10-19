@@ -3,20 +3,20 @@
   "name": "Husik",
   "version": "0.1",
   "description": "New Tab page",
-  "browser_action": {"default_icon": "icon/icon.png"},
-  "permissions": ["tabs"],
-  "icons": { 
+  "browser_action": { "default_icon": "icon/icon.png" },
+  "permissions": ["activeTab"],
+  "icons": {
     "16": "icon/icon16.png",
     "48": "icon/icon48.png",
-    "128": "icon/icon128.png" 
+    "128": "icon/icon128.png"
   },
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
-  "chrome_url_overrides": {"newtab": "newTab.html"},
+  "chrome_url_overrides": { "newtab": "newTab.html" },
   "content_scripts": [
-    { 
+    {
       "matches": ["https://*/*"],
       "js": ["jquery.min.js"]
     }

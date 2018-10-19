@@ -12,56 +12,57 @@
 </head>
 
 <body>
-<div id="background">
-  <div id="bg-overlay"> </div>
-</div>
-<div class="content_arrangements">
-  <div class="top_row">
-    <div class="topleft">
-      <div id="weather"> 
-        <div class="weather-app">
-          <span class="weather-icon"></span>
-          <span class="temp-metric"> </span>
-          <span class="degree">&#176</span>
-          <p class="location"> </p>
+  <div id="background">
+    <div id="bg-overlay"> </div>
+  </div>
+  <div class="content_arrangements">
+    <div class="top_row">
+      <div class="topleft">
+        <div id="weather">
+          <div class="weather-app">
+            <span class="weather-icon"></span>
+            <span class="temp-metric"> </span>
+            <span class="degree">&#176</span>
+            <p class="location"> </p>
+          </div>
+          <div class="weather-overlay">
+            <section class="current-weather">
+              <input id="city" type="text" autocomplete="off">
+              <p id="setting">&#8230 </p>
+              <label class="switch">
+                <input id="units" type="checkbox">
+                <span class="slider round"></span>
+              </label>
+              <p id="weather-description">describe</p>
+              <div id="weather-enlarged">
+                <span class="large-weather-icon"> </span>
+                <span class="large-temp-metric"> 10 </span>
+                <span class="large-degree">&#176</span>
+              </div>
+            </section>
+            <!-- <section class="weather-forecast"></section> -->
+          </div>
         </div>
-        <div class="weather-overlay">
-          <section class="current-weather">
-            <input id="city" type="text" autocomplete="off">
-            <p id="setting">&#8230 </p>
-            <label class="switch">
-              <input id ="units" type="checkbox">
-              <span class="slider round"></span>
-            </label>
-            <p id="weather-description">describe</p>
-            <div id="weather-enlarged">
-              <span class="large-weather-icon"> </span>
-              <span class="large-temp-metric"> 10 </span>
-              <span class="large-degree">&#176</span>
-            </div>
-          </section>
-          <!-- <section class="weather-forecast"></section> -->
+      </div>
+      <div class="topright">
+        <div id="todo">
+          <h2>To Do List</h2>
+          <input id="myInput" type="text" placeholder="What's your goal today? :)">
+          <ul id="list"></ul>
         </div>
       </div>
     </div>
-    <div class="topright">
-      <div id="todo">
-        <h2>To Do List</h2>
-        <input id="myInput" type="text" placeholder="What's your goal today? :)">
-        <ul id="list"></ul>
-      </div>
+    <div class="center_main">
+      <div id="clock"> </div> <br>
+      <div id="date"> </div>
     </div>
+    <p id="credit"> &copy; 2018 EJ. Images: <a href="http://unsplash.com">Unsplash</a> </p>
   </div>
-  <div class="center_main">
-    <div id="clock"> </div> <br>
-    <div id="date"> </div>
-  </div>
-  <p id="credit"> &copy; 2018 EJ. Images: <a href="http://unsplash.com">Unsplash</a> </p>
-</div>
 
-<script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript" src="tab.js"></script>
-<script type="text/javascript" src="weather.js"></script>
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="tab.js"></script>
+  <script type="text/javascript" src="weather.js"></script>
 
 </body>
+
 </html>
